@@ -33,6 +33,9 @@ let package = Package(
                 "api-apple.go",
                 "Makefile"
             ],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy")
+            ],
             publicHeadersPath: ".",
             linkerSettings: [.linkedLibrary("wg-go")]
         )
